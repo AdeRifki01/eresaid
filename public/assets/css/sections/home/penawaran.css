@@ -1,0 +1,113 @@
+/* ===== PENAWARAN SECTION ===== */
+.penawaran-section {
+    background: #fff;
+}
+
+.penawaran {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1a1a2e;
+}
+
+.penawaran-desc {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.8;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.btn-konsultasi {
+    background: linear-gradient(135deg, #3e85f4, #2f64b7);
+    color: #ffffff !important;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(62, 133, 244, 0.3);
+}
+
+.btn-konsultasi:hover {
+    background: linear-gradient(135deg, #2f64b7, #1a4b96);
+    color: #ffffff;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(62, 133, 244, 0.5);
+}
+
+.btn-konsultasi i {
+    transition: transform 0.3s ease;
+}
+
+.btn-konsultasi:hover i {
+    transform: translateX(4px);
+}
+
+/* ===== VIDEO SECTION ===== */
+.video-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper .ratio {
+    border-radius: 16px;
+}
+
+/* ===== RESPONSIVE ===== */
+/* Desktop & Tablet */
+@media (max-width: 991px) {
+    .penawaran {
+        font-size: 1.5rem;
+    }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+    .btn-konsultasi {
+        font-size: 0.8rem;
+        padding: 10px 28px;
+    }
+
+    .penawaran {
+        font-size: 1.3rem;
+    }
+
+    .penawaran-desc {
+        font-size: 0.9rem;
+    }
+
+    .video-wrapper {
+        border-radius: 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .penawaran {
+        font-size: 1.5rem;
+    }
+
+    .penawaran-desc {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    .btn-konsultasi {
+        font-size: 0.85rem;
+        padding: 12px 28px;
+    }
+
+    .video-wrapper {
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        margin: 0 15px;
+    }
+}

@@ -1,0 +1,30 @@
+.btn-gradient-cta {
+    background: linear-gradient(135deg, #3e85f4, #2f64b7);
+    color: #ffffff !important;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(62, 133, 244, 0.3);
+}
+
+.btn-gradient-cta:hover {
+    background: linear-gradient(135deg, #2f64b7, #1a4b96);
+    color: #ffffff;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(62, 133, 244, 0.5);
+}
+
+.btn-gradient-cta i {
+    transition: transform 0.3s ease;
+}
+
+.btn-gradient-cta:hover i {
+    transform: translateX(4px);
+}

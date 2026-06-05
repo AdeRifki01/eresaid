@@ -1,0 +1,137 @@
+/* ===== PORTOFOLIO SECTION ===== */
+.portfolio-section {
+    background: #fff;
+}
+
+.portfolio-row {
+    overflow: hidden;
+}
+
+.portfolio-track .d-flex {
+    display: flex;
+    gap: 16px;
+    width: max-content;
+}
+
+.portfolio-row .item {
+    flex: 0 0 auto;
+    width: 250px;
+}
+
+.portfolio-row img {
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.portfolio-row .item:hover img {
+    transform: scale(1.03);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Animasi Portofolio Slider */
+.portfolio-row.left .d-flex {
+    animation: slideLeft 30s linear infinite;
+}
+
+.portfolio-row.right .d-flex {
+    animation: slideRight 30s linear infinite;
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.btn-portfolio {
+    background: linear-gradient(135deg, #3e85f4, #2f64b7);
+    color: #ffffff !important;
+    border: none;
+    padding: 14px 36px;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    box-shadow: 0 4px 15px rgba(62, 133, 244, 0.3);
+}
+
+.btn-portfolio:hover {
+    background: linear-gradient(135deg, #2f64b7, #1a4b96);
+    color: #ffffff;
+    transform: translateY(-3px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(62, 133, 244, 0.5);
+}
+
+.btn-portfolio i {
+    transition: transform 0.3s ease;
+}
+
+.btn-portfolio:hover i {
+    transform: translateX(4px);
+}
+
+/* ===== RESPONSIVE ===== */
+/* Tablet */
+@media (max-width: 768px) {
+    .portfolio-row .item {
+        width: 150px;
+    }
+
+    .portfolio-track .d-flex {
+        gap: 12px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-subtitle {
+        font-size: 0.9rem;
+        padding: 0 15px;
+    }
+
+    .portfolio-row .item {
+        width: 160px;
+    }
+
+    .portfolio-row img {
+        border-radius: 10px;
+    }
+
+    .portfolio-track .d-flex {
+        gap: 12px;
+    }
+
+    .btn-portfolio {
+        font-size: 0.85rem;
+        padding: 12px 28px;
+    }
+
+    /* Pelan-kan animasi biar nyaman di mobile */
+    .portfolio-row.left .d-flex,
+    .portfolio-row.right .d-flex {
+        animation-duration: 35s;
+    }
+}

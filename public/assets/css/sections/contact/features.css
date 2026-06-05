@@ -1,0 +1,27 @@
+.text-purple {
+    color: #3e85f4 !important;
+}
+
+.feature-card {
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(168, 129, 213, 0.15) !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 576px) {
+    .feature-card {
+        padding: 2rem 1.5rem !important;
+        border-radius: 20px !important;
+    }
+    .feature-icon i {
+        font-size: 2rem !important;
+    }
+    .feature-card h5 {
+        font-size: 1.1rem;
+    }
+}

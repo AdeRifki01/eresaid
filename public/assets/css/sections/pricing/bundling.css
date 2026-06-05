@@ -1,0 +1,209 @@
+.gradient-pricing-section {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+.gradient-section-title {
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: #0f172a;
+    margin-bottom: 8px;
+    letter-spacing: -0.5px;
+}
+.gradient-section-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    margin-bottom: 50px;
+    max-width: 650px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title-underline {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    margin: 10px auto 30px;
+    border-radius: 50px;
+}
+.gradient-card {
+    border-radius: 24px;
+    padding: 40px 30px;
+    background: linear-gradient(135deg, #e0e7ff 0%, #ffffff 100%);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.04);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-align: center;
+    color: #1e293b;
+    position: relative;
+    overflow: hidden;
+}
+.gradient-card::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(
+        circle,
+        rgba(59, 130, 246, 0.1) 0%,
+        transparent 60%
+    );
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    pointer-events: none;
+}
+.gradient-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(59, 130, 246, 0.12);
+    border-color: rgba(59, 130, 246, 0.3);
+}
+.gradient-card:hover::before {
+    opacity: 1;
+}
+.gradient-card-inner-box {
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    border-radius: 50px;
+    padding: 8px 20px;
+    font-weight: 800;
+    margin: 0 auto 25px;
+    font-size: 0.85rem;
+    background: rgba(59, 130, 246, 0.05);
+    color: #1d4ed8;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+.gradient-desc {
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    flex-grow: 1;
+    padding: 0 15px;
+    color: #475569;
+}
+.gradient-type {
+    font-weight: 800;
+    font-size: 1rem;
+    color: #0f172a;
+    margin-bottom: 15px;
+    padding-top: 15px;
+    border-top: 1px dashed rgba(0, 0, 0, 0.1);
+}
+.gradient-price-box {
+    color: #0f172a;
+    margin-bottom: 30px;
+}
+.gradient-price-currency {
+    font-size: 1.2rem;
+    font-weight: 800;
+    vertical-align: top;
+    color: #64748b;
+}
+.gradient-price-value {
+    font-size: 3.5rem;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -1px;
+    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-price-decimal {
+    font-size: 1.2rem;
+    font-weight: 800;
+    vertical-align: top;
+    color: #64748b;
+}
+.gradient-btn {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    color: white;
+    padding: 14px 20px;
+    border-radius: 50px;
+    font-weight: 800;
+    text-decoration: none;
+    display: block;
+    transition: all 0.3s ease;
+    border: none;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.2);
+    letter-spacing: 0.5px;
+    position: relative;
+    z-index: 2;
+}
+.gradient-btn:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 15px 25px rgba(37, 99, 235, 0.3);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .gradient-section-title {
+        font-size: 1.8rem;
+    }
+    .gradient-section-subtitle {
+        font-size: 1rem;
+        padding: 0 15px;
+    }
+    .gradient-price-value {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .gradient-pricing-section {
+        padding: 50px 0;
+    }
+    .gradient-section-title {
+        font-size: 1.5rem;
+    }
+    .gradient-section-subtitle {
+        font-size: 0.9rem;
+    }
+    .gradient-card {
+        padding: 30px 20px;
+        border-radius: 20px;
+    }
+    .gradient-price-value {
+        font-size: 2.5rem;
+    }
+    .gradient-btn {
+        padding: 12px 16px;
+        font-size: 0.9rem;
+    }
+
+    /* Horizontal Scroll Wrapper */
+    .horizontal-scroll-mobile {
+        flex-wrap: nowrap !important;
+        overflow-x: auto;
+        padding-bottom: 20px;
+        -webkit-overflow-scrolling: touch;
+        scroll-snap-type: x mandatory;
+        justify-content: flex-start !important;
+        /* Give some space on left/right so first and last cards don't touch screen edges */
+        scroll-padding-left: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .horizontal-scroll-mobile::-webkit-scrollbar {
+        height: 4px;
+    }
+    .horizontal-scroll-mobile::-webkit-scrollbar-track {
+        background: #f1f5f9;
+        border-radius: 4px;
+    }
+    .horizontal-scroll-mobile::-webkit-scrollbar-thumb {
+        background: #cbd5e1;
+        border-radius: 4px;
+    }
+
+    .horizontal-scroll-mobile > [class*="col-"] {
+        flex: 0 0 85% !important;
+        max-width: 85% !important;
+        scroll-snap-align: center;
+    }
+}

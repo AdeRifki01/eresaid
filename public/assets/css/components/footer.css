@@ -1,0 +1,331 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.footer-agency {
+    padding-top: 40px;
+    padding-bottom: 0;
+    color: #ffffff;
+}
+
+.footer-main {
+    padding-bottom: 40px;
+}
+
+/* ===== FOOTER MAIN ===== */
+
+.footer-logo {
+    font-size: 2.4rem;
+    font-weight: 800;
+    margin-bottom: 18px;
+}
+
+/* ===== SOCIAL ===== */
+.footer-social {
+    display: flex;
+    gap: 14px;
+}
+
+.footer-social a {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+/* Facebook */
+.footer-social a:nth-child(1):hover {
+    background: #1877f2;
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* Instagram */
+.footer-social a:nth-child(2):hover {
+    background: radial-gradient(
+        circle at 30% 107%,
+        #fdf497 0%,
+        #fdf497 5%,
+        #fd5949 45%,
+        #d6249f 60%,
+        #285aeb 90%
+    );
+    color: white;
+    transform: translateY(-4px);
+}
+
+/* TikTok */
+.footer-social a:nth-child(3):hover {
+    background: #000;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+/* ===== MENU ===== */
+
+.footer-main h5 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+/* Pastikan list tidak memiliki margin/padding bawaan yang menggeser posisi */
+.footer-main ul {
+    padding-left: 0 !important;
+    list-style: none;
+    text-align: left;
+}
+
+.footer-main ul li {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.footer-title-link {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #ffffff; /* Warna putih */
+    font-weight: 700; /* Membuat teks tebal */
+    transition: 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.footer-title-link:hover {
+    color: #3d86f6; /* Berubah warna saat kursor di atasnya */
+}
+
+.footer-main ul li a {
+    text-decoration: none;
+    color: #fffffff2;
+    transition: 0.3s ease;
+    line-height: 1.5;
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.footer-main ul li a:hover {
+    color: #3e85f4;
+    padding-left: 4px;
+}
+
+.footer-main .row {
+    align-items: flex-start;
+}
+
+/* ===== MAPS ===== */
+
+.footer-map iframe {
+    width: 100%;
+    height: 180px;
+    margin-top: -5px;
+    border: 0;
+    border-radius: 10px;
+    display: block;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== COPYRIGHT ===== */
+
+.footer-bottom {
+    background: transparent;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 18px 0;
+    text-align: center;
+    margin-top: 0;
+}
+.footer-bottom p {
+    margin: 0;
+    color: #3e85f4;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* Untuk tampilan desktop tetap rata kiri */
+@media (min-width: 992px) {
+    .footer-main h5,
+    .footer-main ul,
+    .footer-logo,
+    .footer-desc {
+        text-align: left !important;
+    }
+    .footer-social {
+        justify-content: flex-start !important;
+    }
+
+    /* Sejajarkan heading h5 (Home, Contact, Location) dengan teks Eresa.id */
+    .footer-main .footer-logo {
+        margin-top: 0;
+    }
+    .footer-main h5 {
+        margin-top: 0;
+    }
+}
+
+/* Menyesuaikan jarak ikon agar tetap rapi */
+.footer-main ul li a i,
+.footer-title-link i,
+.footer-main h5 i {
+    font-size: 1.2rem; /* Ukuran ikon sedikit lebih besar dari teks */
+    opacity: 0.8;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 991px) {
+    /* Memastikan ikon dan teks tetap satu baris di tengah pada mobile */
+    .footer-main ul li a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    /* Memberi jarak antar kolom agar tidak dempet */
+    .footer-main .col-6 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Memastikan teks tetap center di dalam kolomnya masing-masing */
+    .footer-main .footer-logo,
+    .footer-main .footer-desc {
+        text-align: center !important;
+    }
+
+    /* Kolom Home dan Contact: blok di tengah, teks rata kiri */
+    .footer-main .col-6 {
+        text-align: center !important;
+    }
+    .footer-main .col-6 h5 {
+        display: block;
+        text-align: left !important;
+    }
+    .footer-main .col-6 ul {
+        display: block;
+        text-align: left !important;
+        padding-left: 0 !important;
+        margin: 0;
+    }
+
+    .footer-social {
+        justify-content: center !important;
+        margin-bottom: 20px;
+    }
+
+    .footer-title-link {
+        justify-content: flex-start;
+    }
+}
+
+/* =========================================
+   FOOTER ANIMATION
+========================================= */
+
+/* Reveal Animation */
+.footer-reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.8s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.footer-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Delay */
+.footer-delay-1 {
+    transition-delay: 0.1s;
+}
+
+.footer-delay-2 {
+    transition-delay: 0.2s;
+}
+
+.footer-delay-3 {
+    transition-delay: 0.3s;
+}
+
+.footer-delay-4 {
+    transition-delay: 0.4s;
+}
+
+/* Hover lembut untuk kolom */
+.footer-main .col-lg-2,
+.footer-main .col-lg-3,
+.footer-main .col-lg-4 {
+    transition: transform 0.4s ease;
+}
+
+.footer-main .col-lg-2:hover,
+.footer-main .col-lg-3:hover,
+.footer-main .col-lg-4:hover {
+    transform: translateY(-4px);
+}
+
+/* Animasi logo */
+.footer-logo {
+    position: relative;
+    display: inline-block;
+}
+
+.footer-logo::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0%;
+    height: 3px;
+    background: #3d86f6;
+    border-radius: 20px;
+    transition: width 0.5s ease;
+}
+
+.footer-logo:hover::after {
+    width: 100%;
+}
+
+/* Map hover */
+.footer-map iframe {
+    transition: all 0.5s ease;
+}
+
+.footer-map iframe:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 35px rgba(61, 134, 246, 0.15);
+}
+
+/* Copyright fade */
+.footer-bottom {
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-bottom::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 120%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.15),
+        transparent
+    );
+    transition: all 0.8s ease;
+}
+
+.footer-bottom:hover::before {
+    left: 120%;
+}

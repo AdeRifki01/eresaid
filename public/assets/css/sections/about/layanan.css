@@ -1,0 +1,79 @@
+/* ========================================
+   LAYANAN ABOUT SECTION
+======================================== */
+.layanan-about-section {
+    background-color: #ecf3fe;
+    padding-bottom: 30px;
+}
+
+.layanan-about-title {
+    color: #1a1a2e;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.layanan-about-card {
+    transition: 0.3s;
+    border-radius: 15px;
+    height: 100%;
+}
+
+.layanan-about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important;
+}
+
+.layanan-icon-wrapper {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+}
+
+.layanan-icon-wrapper img {
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.layanan-about-card h6 {
+    font-size: 1.05rem;
+    color: #1a1a2e;
+}
+
+.layanan-about-card p {
+    font-size: 0.85rem;
+    line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .layanan-about-title {
+        font-size: 1.6rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .layanan-about-title {
+        font-size: 1.5rem;
+        margin-bottom: 30px !important;
+        padding-top: 30px !important;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .layanan-about-card {
+        padding: 24px 20px !important;
+    }
+    .layanan-icon-wrapper {
+        width: 80px;
+        height: 80px;
+    }
+    .layanan-about-card h6 {
+        font-size: 1.05rem;
+    }
+    .layanan-about-card p {
+        font-size: 0.85rem;
+    }
+}

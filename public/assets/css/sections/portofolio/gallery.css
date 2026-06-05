@@ -1,0 +1,137 @@
+/* ===================================
+   FILTER BUTTON
+=================================== */
+.filter-btn {
+    position: relative;
+    color: #555;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.filter-btn:hover {
+    color: #111;
+}
+/* underline */
+.filter-btn::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #111;
+    transition: 0.35s ease;
+}
+.filter-btn:hover::after {
+    width: 100%;
+}
+/* active */
+.active-btn {
+    color: #111;
+}
+.active-btn::after {
+    width: 100%;
+}
+
+/* ===================================
+   GALLERY CARD
+=================================== */
+.gallery-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+    transform: translateY(0);
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+/* hover naik */
+.gallery-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+/* gambar */
+.gallery-img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+/* zoom gambar */
+.gallery-card:hover .gallery-img {
+    transform: scale(1.08);
+}
+
+.gallery-section {
+    min-height: 100vh;
+    padding-top: 10px;
+    background: linear-gradient(135deg, #ecf3fe 0%, #f8fafc 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Animated Glowing Orbs (Pricing Style) */
+.gallery-section::before {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    width: 50%;
+    height: 80%;
+    background: radial-gradient(
+        circle,
+        rgba(62, 133, 244, 0.25) 0%,
+        transparent 70%
+    );
+    top: -200px;
+    left: -200px;
+}
+
+.gallery-section::after {
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(
+        circle,
+        rgba(240, 230, 255, 0.5) 0%,
+        transparent 70%
+    );
+    bottom: -300px;
+    right: -200px;
+}
+
+.gallery-section .z-1 {
+    z-index: 1;
+}
+
+.gallery-title {
+    font-size: 2.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .gallery-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .gallery-section {
+        min-height: auto;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .gallery-title {
+        font-size: 1.8rem;
+    }
+
+    .filter-btn {
+        font-size: 0.9rem;
+        margin-right: 0.25rem !important;
+        padding: 0.375rem 0.5rem;
+    }
+
+    .gallery-card {
+        border-radius: 12px;
+    }
+}

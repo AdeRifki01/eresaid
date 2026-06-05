@@ -1,0 +1,112 @@
+/* Custom Form Controls */
+.form-control {
+    background-color: #ffffff !important;
+    border: 1px solid #d1d5db !important;
+    color: #4b5563;
+    box-shadow: none !important;
+    transition: all 0.3s ease;
+}
+
+.form-control::placeholder {
+    color: #9ca3af;
+}
+
+.form-control:focus {
+    border-color: #3e85f4 !important;
+    box-shadow: 0 0 0 3px rgba(168, 129, 213, 0.2) !important;
+}
+
+/* Custom Button */
+.btn-purple {
+    background-color: #3e85f4;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-purple:hover {
+    background-color: #3e85f4;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(168, 129, 213, 0.3);
+}
+
+/* Icon Box */
+.icon-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #3e85f4;
+    border: 1.5px solid #e5e7eb;
+    background-color: transparent;
+    flex-shrink: 0;
+}
+
+/* Custom Checkbox */
+.custom-checkbox {
+    border-color: #d1d5db;
+    cursor: pointer;
+}
+
+.custom-checkbox:checked {
+    background-color: #3e85f4;
+    border-color: #3e85f4;
+}
+
+.custom-checkbox:focus {
+    box-shadow: 0 0 0 3px rgba(168, 129, 213, 0.2);
+    border-color: #3e85f4;
+}
+
+.contact-form-wrapper {
+    margin-top: -80px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px) {
+    .contact-form-wrapper {
+        margin-top: -40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-form-wrapper {
+        margin-top: -20px;
+    }
+    .contact-form-inner {
+        padding: 2rem 1.5rem !important;
+        border-radius: 20px !important;
+    }
+    .map-container {
+        min-height: 200px !important;
+        margin-top: 15px;
+    }
+    .contact-details .icon-box {
+        width: 32px;
+        height: 32px;
+    }
+    .contact-details p,
+    .contact-details a {
+        font-size: 0.85rem !important;
+    }
+}
+
+@media (min-width: 992px) {
+    #contactForm .form-control {
+        padding-top: 0.4rem !important;
+        padding-bottom: 0.4rem !important;
+        font-size: 0.875rem !important;
+    }
+    #contactForm .mb-3 {
+        margin-bottom: 0.75rem !important;
+    }
+    #contactForm .mb-4 {
+        margin-bottom: 1rem !important;
+    }
+    #contactForm .btn {
+        padding-top: 0.4rem !important;
+        padding-bottom: 0.4rem !important;
+        font-size: 0.875rem !important;
+    }
+}

@@ -1,0 +1,122 @@
+.contact-hero-section {
+    padding-top: 140px;
+    padding-left: 150px;
+    padding-bottom: 120px;
+    background: linear-gradient(135deg, #ecf3fe 50%, #3e85f4 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background subtle circles to mimic the mockup */
+.contact-hero-section::before,
+.contact-hero-section::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.contact-hero-section::before {
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(
+        circle,
+        rgba(230, 215, 255, 0.4) 0%,
+        transparent 70%
+    );
+    top: -200px;
+    left: -200px;
+}
+
+.contact-hero-section::after {
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(
+        circle,
+        rgba(240, 230, 255, 0.5) 0%,
+        transparent 70%
+    );
+    bottom: -300px;
+    right: -200px;
+}
+
+.contact-hero-section .z-1 {
+    z-index: 1;
+}
+
+.text-purple {
+    color: #3e85f4 !important;
+}
+
+.contact-hero-img {
+    max-width: 60%;
+    animation: contact-float 6s ease-in-out infinite;
+    mix-blend-mode: multiply;
+}
+
+.hero-bottom-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to bottom, transparent, #f3f4f6);
+    z-index: 0;
+}
+
+@keyframes contact-float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 991px) {
+    .contact-hero-section {
+        padding-left: 0;
+        padding-top: 120px;
+        padding-bottom: 100px;
+    }
+    .contact-hero-img {
+        max-width: 70%;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-hero-section {
+        padding-top: 150px;
+        padding-bottom: 50px;
+    }
+    .contact-hero-title {
+        font-size: 2.2rem !important;
+    }
+    .contact-hero-subtitle {
+        font-size: 1.1rem !important;
+    }
+    .contact-hero-img {
+        max-width: 90%;
+        margin-top: 10px;
+    }
+    .hero-bottom-gradient {
+        height: 60px;
+    }
+    .contact-hero-section::before {
+        width: 300px;
+        height: 300px;
+        top: -50px;
+        left: -50px;
+    }
+    .contact-hero-section::after {
+        width: 400px;
+        height: 400px;
+        bottom: -100px;
+        right: -100px;
+    }
+}

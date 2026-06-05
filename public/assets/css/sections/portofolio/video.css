@@ -1,0 +1,49 @@
+/* ===================================
+   VIDEO REELS
+=================================== */
+.ratio video {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+/* hover reels */
+.ratio:hover video {
+    transform: scale(1.03);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.porto-yt-wrapper {
+    max-width: 800px;
+    margin: auto;
+}
+
+.porto-reels-title {
+    font-size: 1.5rem;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .porto-yt-wrapper {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .porto-video-section {
+        padding-top: 30px !important;
+        padding-bottom: 30px !important;
+    }
+
+    .porto-yt-wrapper {
+        padding: 0 15px;
+    }
+
+    .porto-reels-title {
+        font-size: 1.3rem;
+        margin-top: 15px;
+    }
+
+    .ratio video {
+        border-radius: 12px;
+    }
+}
