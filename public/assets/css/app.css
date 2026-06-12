@@ -5,10 +5,10 @@
 /* PAGES */
 @import url("./pages/home.css");
 @import url("./pages/about.css");
-@import url("./pages/contact.css");
+@import url("./pages/rebootcom.css");
 @import url("./pages/portofolio.css");
 @import url("./pages/price.css");
-@import url("./pages/rebootcom.css");
+@import url("./pages/contact.css");
 
 /* GLOBAL */
 body {

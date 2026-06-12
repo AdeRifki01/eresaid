@@ -8,6 +8,5 @@
 @include('sections.rebootcom.about')
 @include('sections.rebootcom.dinostik')
 @include('sections.rebootcom.services')
-@include('sections.rebootcom.trusted-client')
 
 @endsection

@@ -1,95 +1,191 @@
-<!-- DINOSTICK SECTION -->
-<section id="dinostick" class="dinostick-section py-5">
+<!-- SYSTEM MONITOR SHOWCASE SECTION -->
+<section id="system-monitor" class="showcase-section py-5">
     <div class="container">
-        <div class="row align-items-center gy-5">
-            <!-- Left: Text Content -->
-            <div class="col-lg-6 pe-lg-5">
-                <div class="dinostick-content reveal">
-                    <span class="badge-premium mb-3">SOFTWARE UNGGULAN</span>
-                    <h2 class="section-title mb-3">
-                        <span class="text-danger">Dinostick</span>
-                    </h2>
-                    <h4 class="section-subtitle mb-4">
-                        "Menjadikan Anda Teknisi Pribadi Untuk Komputer Sendiri"
-                    </h4>
-                    <p class="section-desc mb-4">
-                        Seiring waktu, laptop/PC melambat karena berbagai faktor. Kini tersedia software diagnosis terintegrasi untuk memantau kesehatan perangkat, menjaga performa tetap optimal, dan memungkinkan Anda mengatasi masalah secara mandiri tanpa perlu repot memanggil teknisi.
-                    </p>
+        
+        <!-- Section Header -->
+        <div class="row mb-5 justify-content-center text-center">
+            <div class="col-lg-8 reveal">
+                <span class="badge-premium mb-3">REBOOTCOM SYSTEM MONITOR</span>
+                <h2 class="section-title mb-3">
+                    Pantau & Optimalkan <span class="text-danger">Kinerja PC Anda</span>
+                </h2>
+                <p class="section-desc">
+                    Aplikasi komprehensif untuk mendiagnosis perangkat keras dan perangkat lunak secara mandiri.
+                </p>
+            </div>
+        </div>
+
+        <div class="row gy-5 position-relative">
+            <!-- Left Column: Sticky Image Mockup -->
+            <div class="col-lg-7">
+                <div class="sticky-mockup-wrapper reveal">
+                    <div class="glass-mockup-frame">
+                        <video autoplay loop muted playsinline class="img-fluid w-100 rounded-3 shadow-lg" id="showcase-video">
+                            <source src="{{ asset('assets/images/rebootcom/dashboard/dashboard-demo.mp4') }}" type="video/mp4">
+                            Browser Anda tidak mendukung tag video.
+                        </video>
+                    </div>
                 </div>
             </div>
-            
-            <!-- Right: Image -->
-            <div class="col-lg-6">
-                <div class="dinostick-image-wrapper reveal reveal-delay-2">
-                    <img src="{{ asset('assets/images/rebootcom/dashboard/cpu.png') }}" alt="Menu Dinostick" class="img-fluid dinostick-main-img">
-                    
-                    <!-- Floating Cards to mimic UI elements -->
-                    <div class="floating-ui ui-cpu">
-                        <i class="bi bi-cpu text-primary"></i>
-                        <span class="ui-label">CPU</span>
-                        <strong class="ui-value">11%</strong>
+
+            <!-- Right Column: Scrolling Feature Cards -->
+            <div class="col-lg-5 ps-lg-4 scrolling-cards-wrapper">
+                
+                <!-- Card 1: Top Metrics -->
+                <div class="showcase-card reveal reveal-delay-2">
+                    <div class="card-icon">
+                        <i class="bi bi-speedometer text-danger"></i>
                     </div>
-                    <div class="floating-ui ui-temp">
-                        <i class="bi bi-speedometer2 text-info"></i>
-                        <span class="ui-label">Freq</span>
-                        <strong class="ui-value">2.48 GHz</strong>
+                    <h4>Top Metrics & Optimization</h4>
+                    <p>Pemantauan instan metrik utama perangkat Anda (CPU, RAM, GPU, Baterai) agar selalu terkendali. Lengkap dengan fitur <strong>Quick Boost</strong> untuk membersihkan memori dengan satu klik.</p>
+                </div>
+
+                <!-- Card 2: Eresa Integration -->
+                <div class="showcase-card reveal">
+                    <div class="card-icon">
+                        <i class="bi bi-megaphone-fill text-primary"></i>
                     </div>
+                    <h4>Ruang Informasi Spesial</h4>
+                    <p>Mendukung ekosistem digital terintegrasi melalui informasi layanan dari <strong>Eresa Creative Studio</strong>. Pantau kinerja sekaligus temukan solusi pengembangan bisnis.</p>
+                </div>
+
+                <!-- Card 3: System Summary -->
+                <div class="showcase-card reveal">
+                    <div class="card-icon">
+                        <i class="bi bi-pc-display"></i>
+                    </div>
+                    <h4>System Summary</h4>
+                    <p>Dapatkan informasi detail mengenai spesifikasi perangkat keras dan sistem operasi Anda. Mulai dari Hostname, versi OS, hingga nama model prosesor secara terperinci.</p>
+                </div>
+
+                <!-- Card 4: Temperatures -->
+                <div class="showcase-card reveal">
+                    <div class="card-icon">
+                        <i class="bi bi-thermometer-half text-warning"></i>
+                    </div>
+                    <h4>Live Temperatures & Metrics</h4>
+                    <p>Jangan biarkan komponen Anda *overheat*. Pantau suhu CPU dan Motherboard secara <em>real-time</em> beserta frekuensi prosesor dan metrik <em>thread</em> inti secara langsung.</p>
+                </div>
+
+                <!-- Card 5: Advanced Monitoring -->
+                <div class="showcase-card reveal mb-0">
+                    <div class="card-icon">
+                        <i class="bi bi-hdd-network-fill text-success"></i>
+                    </div>
+                    <h4>Advanced Monitoring</h4>
+                    <p>Analisis mendalam mengenai sisa kapasitas penyimpanan (partisi C: & D:), rincian pemakaian memori, beban pemrosesan GPU, hingga kecepatan jaringan (Download/Upload).</p>
                 </div>
             </div>
         </div>
 
-        <!-- Features Row (Full Width Horizontal) -->
-        <div class="row mt-2 pt-2">
-            <div class="col-12">
-                <div class="feature-list reveal reveal-delay-3">
-                    <div class="feature-item">
-                        <div class="feature-header">
-                            <div class="feature-icon">
-                                <i class="bi bi-display"></i>
+        <!-- Interactive Feature Tabs -->
+        <div class="row mt-5 pt-5 justify-content-center">
+            <div class="col-lg-10 text-center reveal">
+                <h3 class="mb-4 fw-bold">Eksplorasi Menu Spesifik</h3>
+                
+                <!-- Tab Navigation -->
+                <ul class="nav feature-nav-tabs justify-content-center mb-5" id="featureTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="cpu-tab" data-bs-toggle="tab" data-bs-target="#cpu-pane" type="button" role="tab">CPU</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="ram-tab" data-bs-toggle="tab" data-bs-target="#ram-pane" type="button" role="tab">RAM</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="gpu-tab" data-bs-toggle="tab" data-bs-target="#gpu-pane" type="button" role="tab">GPU</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="storage-tab" data-bs-toggle="tab" data-bs-target="#storage-pane" type="button" role="tab">Storage</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="battery-tab" data-bs-toggle="tab" data-bs-target="#battery-pane" type="button" role="tab">Battery</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="tools-tab" data-bs-toggle="tab" data-bs-target="#tools-pane" type="button" role="tab">Tools</button>
+                    </li>
+                </ul>
+
+                <!-- Tab Content -->
+                <div class="tab-content" id="featureTabContent">
+                    <!-- CPU Pane -->
+                    <div class="tab-pane fade show active" id="cpu-pane" role="tabpanel" tabindex="0">
+                        <div class="row align-items-center text-start">
+                            <div class="col-md-5 mb-4 mb-md-0 pe-md-4">
+                                <h4 class="fw-bold mb-3">Analisis Performa Prosesor</h4>
+                                <p class="text-muted">Dapatkan gambaran komprehensif tentang kesehatan "otak" komputer Anda. Fitur ini menyajikan pemakaian secara akurat dan mengidentifikasi *bottleneck* secara otomatis.</p>
                             </div>
-                            <h5>Dashboard Real-Time</h5>
+                            <div class="col-md-7">
+                                <img src="{{ asset('assets/images/rebootcom/dashboard/cpu.png') }}" class="img-fluid rounded-3 shadow-lg" alt="CPU Feature">
+                            </div>
                         </div>
-                        <div class="feature-text">
-                            <p>Pantau kesehatan & performa PC secara langsung setiap detik.</p>
+                    </div>
+                    
+                    <!-- RAM Pane -->
+                    <div class="tab-pane fade" id="ram-pane" role="tabpanel" tabindex="0">
+                        <div class="row align-items-center text-start">
+                            <div class="col-md-5 mb-4 mb-md-0 pe-md-4">
+                                <h4 class="fw-bold mb-3">Optimalisasi Memori</h4>
+                                <p class="text-muted">Pantau penggunaan memori secara mendalam. Lihat porsi memori yang terpakai untuk memastikan PC Anda tetap lancar saat *multitasking*.</p>
+                            </div>
+                            <div class="col-md-7">
+                                <img src="{{ asset('assets/images/rebootcom/dashboard/ram.png') }}" class="img-fluid rounded-3 shadow-lg" alt="RAM Feature">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- GPU Pane -->
+                    <div class="tab-pane fade" id="gpu-pane" role="tabpanel" tabindex="0">
+                        <div class="row align-items-center text-start">
+                            <div class="col-md-5 mb-4 mb-md-0 pe-md-4">
+                                <h4 class="fw-bold mb-3">Pemantauan Grafis</h4>
+                                <p class="text-muted">Sangat penting untuk *gamer* dan *creator*. Menu ini memantau kinerja *Graphics Card* Anda, memastikan performa *rendering* optimal tanpa *overheating*.</p>
+                            </div>
+                            <div class="col-md-7">
+                                <img src="{{ asset('assets/images/rebootcom/dashboard/gpu.png') }}" class="img-fluid rounded-3 shadow-lg" alt="GPU Feature">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Storage Pane -->
+                    <div class="tab-pane fade" id="storage-pane" role="tabpanel" tabindex="0">
+                        <div class="row align-items-center text-start">
+                            <div class="col-md-5 mb-4 mb-md-0 pe-md-4">
+                                <h4 class="fw-bold mb-3">Kesehatan Penyimpanan</h4>
+                                <p class="text-muted">Periksa kapasitas *Hardisk* atau *SSD* Anda. Pantau ruang yang tersisa pada partisi utama dan kelola file sistem Anda dengan lebih baik.</p>
+                            </div>
+                            <div class="col-md-7">
+                                <img src="{{ asset('assets/images/rebootcom/dashboard/storage.png') }}" class="img-fluid rounded-3 shadow-lg" alt="Storage Feature">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="feature-item">
-                        <div class="feature-header">
-                            <div class="feature-icon">
-                                <i class="bi bi-tools"></i>
+                    <!-- Battery Pane -->
+                    <div class="tab-pane fade" id="battery-pane" role="tabpanel" tabindex="0">
+                        <div class="row align-items-center text-start">
+                            <div class="col-md-5 mb-4 mb-md-0 pe-md-4">
+                                <h4 class="fw-bold mb-3">Siklus & Umur Baterai</h4>
+                                <p class="text-muted">Khusus pengguna laptop, ketahui status pemakaian daya, kapasitas optimal, dan pantau indikator pengisian daya agar baterai lebih awet.</p>
                             </div>
-                            <h5>300+ Tes Diagnostik</h5>
-                        </div>
-                        <div class="feature-text">
-                            <p>Deteksi masalah hardware dan software secara akurat.</p>
+                            <div class="col-md-7">
+                                <img src="{{ asset('assets/images/rebootcom/dashboard/battery.png') }}" class="img-fluid rounded-3 shadow-lg" alt="Battery Feature">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="feature-item">
-                        <div class="feature-header">
-                            <div class="feature-icon">
-                                <i class="bi bi-bell-fill"></i>
+                    <!-- Tools Pane -->
+                    <div class="tab-pane fade" id="tools-pane" role="tabpanel" tabindex="0">
+                        <div class="row align-items-center text-start">
+                            <div class="col-md-5 mb-4 mb-md-0 pe-md-4">
+                                <h4 class="fw-bold mb-3">Kumpulan Alat Cerdas</h4>
+                                <p class="text-muted">Akses cepat ke utilitas sistem yang berguna untuk mengatasi masalah ringan (*troubleshooting*), mempercepat pemeliharaan, dan mengatur *startup* PC Anda.</p>
                             </div>
-                            <h5>Notifikasi Instan</h5>
-                        </div>
-                        <div class="feature-text">
-                            <p>Dapatkan peringatan seketika jika ada masalah kritis.</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-item">
-                        <div class="feature-header">
-                            <div class="feature-icon">
-                                <i class="bi bi-clock-history"></i>
+                            <div class="col-md-7">
+                                <img src="{{ asset('assets/images/rebootcom/dashboard/tools.png') }}" class="img-fluid rounded-3 shadow-lg" alt="Tools Feature">
                             </div>
-                            <h5>Riwayat Sistem</h5>
-                        </div>
-                        <div class="feature-text">
-                            <p>Lacak histori perangkat untuk percepat troubleshooting.</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
