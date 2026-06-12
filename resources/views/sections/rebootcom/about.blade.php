@@ -6,7 +6,7 @@
             <div class="col-lg-5">
                 <div class="about-image-box reveal">
                     <!-- Gunakan placeholder Dashboard sementara, bisa diganti aset asli nantinya -->
-                    <img src="{{ asset('assets/images/rebootcom/dashboard/cpu.png') }}" alt="Tentang Rebootcom" class="img-fluid rounded-1 shadow-lg main-about-img">
+                    <img src="{{ asset('assets/images/rebootcom/dashboard/Dashboard.png') }}" alt="Tentang Rebootcom" class="img-fluid rounded-1 shadow-lg main-about-img">
                     
                     <!-- Floating Experience Box -->
                     <div class="experience-card">

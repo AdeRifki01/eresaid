@@ -14,8 +14,8 @@
                     </p>
                     
                     <div class="hero-buttons justify-content-center">
-                        <a href="#download" class="btn-danger-custom">
-                            <i class="bi bi-download"></i> Unduh RebootCom
+                        <a href="#" onclick="alert('Coming Soon!'); return false;" class="btn-danger-custom">
+                            <i class="bi bi-windows me-2"></i> Unduh untuk Windows
                         </a>
                     </div>
                 </div>
@@ -24,18 +24,13 @@
             <!-- Right Content (Image) -->
             <div class="col-lg-6">
                 <div class="hero-image-wrapper reveal reveal-delay-2">
-                    <img src="{{ asset('assets/images/rebootcom/dashboard/Dashboard.png') }}" alt="Rebootcom Dashboard" class="hero-main-img img-fluid">
                     
-                    <!-- Floating Elements for premium feel -->
-                    <div class="floating-badge badge-1">
-                        <i class="bi bi-shield-check text-success"></i>
-                        <span>Aman & Terenkripsi</span>
+                    <!-- Concept 2: Premium Glassmorphism Stack -->
+                    <div class="glass-card-stack card-back-2"></div>
+                    <div class="glass-card-stack card-back-1"></div>
+                    <div class="glass-card-main">
+                        <img src="{{ asset('assets/images/rebootcom/logoRebootCom.png') }}" alt="Rebootcom Dashboard" class="hero-main-img img-fluid">
                     </div>
-                    <div class="floating-badge badge-2">
-                        <i class="bi bi-activity text-danger"></i>
-                        <span>Pemantauan 24/7</span>
-                    </div>
-                </div>
             </div>
         </div>
     </div>
