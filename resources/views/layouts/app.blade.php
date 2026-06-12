@@ -8,7 +8,11 @@
     <title>@yield('title', 'ERESA.ID')</title>
 
     {{-- Favicon --}}
-    <link rel="icon" type="image/png" href="{{ asset('assets/images/eresa/Logo_putih.png') }}">
+    @if(request()->is('rebootcom*'))
+        <link rel="icon" type="image/png" href="{{ asset('assets/images/rebootcom/logoRebootCom.png') }}">
+    @else
+        <link rel="icon" type="image/png" href="{{ asset('assets/images/eresa/Logo_putih.png') }}">
+    @endif
 
     {{-- Bootstrap CSS --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">

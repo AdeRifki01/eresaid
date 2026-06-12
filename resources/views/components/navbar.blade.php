@@ -35,7 +35,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link {{ Request::is('portofolio') ? 'active' : '' }}" href="/portofolio">
-                        Portfolio
+                        Portofolio
                     </a>
                 </li>
 

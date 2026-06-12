@@ -1,0 +1,141 @@
+/* SERVICES SECTION */
+
+.services-section {
+    background: #050505; /* Tema gelap untuk memberikan kesan premium dan kontras */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Garis Glow Latar Belakang */
+.services-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+        circle at 50% 0%,
+        rgba(220, 38, 38, 0.08) 0%,
+        transparent 60%
+    );
+    z-index: 0;
+    pointer-events: none;
+}
+
+.services-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Header */
+.section-title {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+/* Service Card (Glassmorphism) */
+.rb-service-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 20px 20px;
+    border-radius: 16px;
+    height: 100%;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    flex-direction: column;
+}
+
+.rb-service-card:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border-color: rgba(220, 38, 38, 0.4);
+    transform: translateY(-8px);
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.4),
+        inset 0 0 0 1px rgba(220, 38, 38, 0.1);
+}
+
+.rb-service-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.rb-service-icon {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(220, 38, 38, 0.3);
+}
+
+.rb-service-icon i {
+    font-size: 20px;
+    color: #ffffff;
+    transition: all 0.4s ease;
+}
+
+.rb-service-card:hover .rb-service-icon {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 8px 25px rgba(220, 38, 38, 0.5);
+}
+
+.rb-service-title {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+}
+
+.rb-service-desc {
+    color: #9ca3af;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    flex-grow: 1; /* Memastikan tombol selalu ada di bawah meskipun teks pendek */
+}
+
+.rb-service-link {
+    color: #dc2626;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.rb-service-link i {
+    transition: transform 0.3s ease;
+}
+
+.rb-service-link:hover {
+    color: #ef4444;
+}
+
+.rb-service-link:hover i {
+    transform: translateX(5px);
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+    .section-title {
+        font-size: 28px;
+    }
+    .rb-service-card {
+        padding: 25px 20px;
+    }
+}

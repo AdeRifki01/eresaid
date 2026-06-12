@@ -1,0 +1,21 @@
+/* Component Imports */
+@import url("../sections/rebootcom/hero.css");
+@import url("../sections/rebootcom/about.css");
+@import url("../sections/rebootcom/dinostik.css");
+@import url("../sections/rebootcom/services.css");
+@import url("../sections/rebootcom/clients.css");
+
+/* Rebootcom Design System & Tokens */
+:root {
+    /* Main Palette (Simplified) */
+    --rb-primary: #a70505; /* Warna Utama Rebootcom */
+    --rb-bg-dark: #111111; /* Background Utama Gelap */
+    --rb-bg-card: #161616; /* Background Kartu/Elemen */
+
+    /* Typography & Utilities */
+    --rb-text-light: #ffffff;
+    --rb-text-muted: #cfcfcf;
+
+    --rb-shadow-primary: 0 10px 30px rgba(167, 5, 5, 0.2);
+    --rb-transition-normal: 300ms ease-in-out;
+}

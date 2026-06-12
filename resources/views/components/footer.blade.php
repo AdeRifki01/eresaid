@@ -14,18 +14,18 @@ $social_media = [
 $current_year = date("Y");
 ?>
 
-<footer class="footer-agency" style="background-image: url('{{ asset('assets/images/components/bgfooter.png') }}'); background-size: cover; background-position: center; position: relative;">
+<footer class="footer-agency" style="background-image: url('{{ asset('assets/images/components/bgfooter.jpeg') }}'); background-size: cover; background-position: center; position: relative;">
     <div class="container">
         <!-- Main Footer -->
         <div class="footer-main">
             <!-- Tetap gunakan justify-content-center untuk row utama -->
             <div class="row g-4 text-center text-lg-start justify-content-center">      
                 <!-- Brand/Logo (Full width di mobile agar di atas) -->
-                <div class="col-12 col-lg-3 px-3 footer-reveal footer-delay-1">
+                <div class="col-12 col-lg-4 px-3 footer-reveal footer-delay-1 text-center">
                     <div class="mb-4">
-                        <img src="{{ asset('assets/images/eresa/Logo_putih.png') }}" alt="Eresa.id" style="width: 140px; height: auto;">
+                        <img src="{{ asset('assets/images/eresa/Logo_putih.png') }}" alt="Eresa.id" style="width: 100px; height: auto;">
                     </div>
-                    <div class="footer-social">
+                    <div class="footer-social justify-content-center">
                         <a href="{{ $social_media['facebook'] }}" target="_blank"><i class="bi bi-facebook"></i></a>
                         <a href="{{ $social_media['instagram'] }}" target="_blank"><i class="bi bi-instagram"></i></a>
                         <a href="{{ $social_media['tiktok'] }}" target="_blank"><i class="bi bi-tiktok"></i></a>
