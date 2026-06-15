@@ -1,5 +1,5 @@
 <!-- ERESA ABOUT US -->
-<section class="about-section">
+<section class="aboutus-section">
     <div class="container">
         <div class="row align-items-center">
             

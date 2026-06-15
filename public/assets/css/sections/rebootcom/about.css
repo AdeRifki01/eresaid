@@ -8,6 +8,7 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
+    overflow: hidden;
 }
 
 /* Dekorasi Latar Belakang */
@@ -203,7 +204,10 @@
         font-size: 32px;
     }
     .about-image-box {
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+    }
+    .icon-box {
+        margin: 0 auto 15px auto;
     }
     .exp-content {
         text-align: left;
@@ -241,7 +245,7 @@
         margin-bottom: 10px;
     }
     .about-title {
-        font-size: 24px;
+        font-size: 30px;
         margin-bottom: 15px !important;
     }
     .badge-premium-dark {
@@ -254,13 +258,19 @@
         position: relative;
         bottom: 0;
         right: 0;
-        margin-top: 20px;
-        width: 100%;
+        margin: 20px auto 0 auto;
+        width: fit-content;
         justify-content: center;
         transform: none;
         animation: none;
     }
     .stat-box {
-        padding: 15px;
+        padding: 15px 10px;
+    }
+    .stat-number {
+        font-size: 20px;
+    }
+    .stat-text {
+        font-size: 12px;
     }
 }

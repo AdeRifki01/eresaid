@@ -1,7 +1,7 @@
 <!-- ABOUT SECTION -->
 <section class="about-section py-5">
     <div class="container">
-        <div class="row align-items-center gy-5">
+        <div class="row align-items-center gy-2 gy-lg-5">
             <!-- Image & Experience Card -->
             <div class="col-lg-5">
                 <div class="about-image-box reveal">
@@ -24,9 +24,9 @@
             <!-- Text Content & Stats -->
             <div class="col-lg-7 ps-lg-5">
                 <div class="about-content reveal reveal-delay-2">
-                    <h3 class="about-title mb-4 text-white">
+                    <h4 class="about-title mb-4 text-white">
                         Solusi Cerdas Untuk <span class="text-danger">Infrastruktur IT</span> Anda
-                    </h3>
+                    </h4>
                     <span class="badge-premium-dark mb-3">TENTANG KAMI</span>
                     <p class="about-desc mb-4">
                         <!-- Kami menyediakan layanan pemantauan dan pengelolaan perangkat cerdas yang dirancang khusus untuk memastikan keamanan, stabilitas, dan performa maksimal bagi bisnis Anda di era digital. Jangan biarkan sistem Anda lengah sedetik pun. -->
@@ -35,7 +35,7 @@
                     </p>
                     
                     <div class="row g-4">
-                        <div class="col-sm-6">
+                        <div class="col-6">
                             <div class="stat-box">
                                 <div class="icon-box">
                                     <i class="bi bi-hdd-network"></i>
@@ -44,7 +44,7 @@
                                 <p class="stat-text">Uptime Sistem Terjamin</p>
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-6">
                             <div class="stat-box">
                                 <div class="icon-box">
                                     <i class="bi bi-globe"></i>
