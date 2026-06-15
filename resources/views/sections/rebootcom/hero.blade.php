@@ -31,6 +31,7 @@
                     <div class="glass-card-main">
                         <img src="{{ asset('assets/images/rebootcom/logoRebootCom.png') }}" alt="Rebootcom Dashboard" class="hero-main-img img-fluid">
                     </div>
+                </div>
             </div>
         </div>
     </div>

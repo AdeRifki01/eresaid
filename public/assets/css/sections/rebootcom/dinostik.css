@@ -202,4 +202,41 @@
     .tab-content {
         padding: 20px;
     }
+
+    .section-title {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 28px;
+    }
+
+    .showcase-card {
+        padding: 25px 20px;
+    }
+
+    .scrolling-cards-wrapper {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title {
+        font-size: 24px;
+    }
+
+    .feature-nav-tabs .nav-link {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .showcase-card h4 {
+        font-size: 18px;
+    }
+
+    .showcase-card p {
+        font-size: 14px;
+    }
 }

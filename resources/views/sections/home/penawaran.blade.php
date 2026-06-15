@@ -25,7 +25,14 @@
                 <img src="{{ asset('assets/images/brand/mugen.png') }}" alt="Mugen">
                 <img src="{{ asset('assets/images/brand/matuju.png') }}" alt="matuju">
                 <img src="{{ asset('assets/images/brand/gubugGurame.png') }}" alt="gubugGurame">
-
+                <img src="{{ asset('assets/images/rebootcom/client/defa.png') }}" alt="defa">
+                <img src="{{ asset('assets/images/rebootcom/client/flight-academy.png') }}" alt="flight-academy">
+                <img src="{{ asset('assets/images/rebootcom/client/harito.png') }}" alt="harito">
+                <img src="{{ asset('assets/images/rebootcom/client/ptMMM.png') }}" alt="ptMMM">
+                <img src="{{ asset('assets/images/rebootcom/client/Qoala.png') }}" alt="Qoala">
+                <img src="{{ asset('assets/images/rebootcom/client/qupro.png') }}" alt="qupro">
+                
+                
                 <!-- DUPLIKAT (biar smooth looping) -->
                 <img src="{{ asset('assets/images/brand/Almaz.png') }}" alt="Almaz">
                 <img src="{{ asset('assets/images/brand/Totoro.png') }}" alt="Totoro">
@@ -38,6 +45,12 @@
                 <img src="{{ asset('assets/images/brand/mugen.png') }}" alt="Mugen">
                 <img src="{{ asset('assets/images/brand/matuju.png') }}" alt="matuju">
                 <img src="{{ asset('assets/images/brand/gubugGurame.png') }}" alt="gubugGurame">
+                <img src="{{ asset('assets/images/rebootcom/client/defa.png') }}" alt="defa">
+                <img src="{{ asset('assets/images/rebootcom/client/flight-academy.png') }}" alt="flight-academy">
+                <img src="{{ asset('assets/images/rebootcom/client/harito.png') }}" alt="harito">
+                <img src="{{ asset('assets/images/rebootcom/client/ptMMM.png') }}" alt="ptMMM">
+                <img src="{{ asset('assets/images/rebootcom/client/Qoala.png') }}" alt="Qoala">
+                <img src="{{ asset('assets/images/rebootcom/client/qupro.png') }}" alt="qupro">
             </div>
         </div>
 

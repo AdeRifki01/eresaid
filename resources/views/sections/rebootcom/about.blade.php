@@ -24,7 +24,7 @@
             <!-- Text Content & Stats -->
             <div class="col-lg-7 ps-lg-5">
                 <div class="about-content reveal reveal-delay-2">
-                    <h3 class="about-title mb-4">
+                    <h3 class="about-title mb-4 text-white">
                         Solusi Cerdas Untuk <span class="text-danger">Infrastruktur IT</span> Anda
                     </h3>
                     <span class="badge-premium-dark mb-3">TENTANG KAMI</span>
