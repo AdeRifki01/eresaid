@@ -44,7 +44,7 @@
             <!-- KANAN: Map & Contact Info -->
             <div class="col-lg-6 ps-lg-4 d-flex flex-column">
                 <!-- Map -->
-                <div class="map-container mb-4 flex-grow-1" style="min-height: 250px;">
+                <div class="map-container mb-2 flex-grow-1" style="min-height: 250px;">
                     <iframe 
                         src="https://www.google.com/maps?q=Jl.+Delima+Raya+Blok+8+No.5A+Duren+Sawit+Jakarta+Timur&output=embed" 
                         class="w-100 h-100 rounded-4" 
@@ -55,24 +55,24 @@
                 </div>
 
                 <!-- Contact Details -->
-                <div class="contact-details mt-2">
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="icon-box me-3">
+                <div class="contact-details mt-3 w-100 d-flex flex-column align-items-start" style="text-align: left;">
+                    <div class="d-flex align-items-center mb-1 w-100" style="justify-content: flex-start !important;">
+                        <div class="icon-box me-3 flex-shrink-0" style="margin-top: 4px;">
                             <i class="bi bi-geo-alt fs-5"></i>
                         </div>
-                        <p class="text-dark small mb-0 fw-medium">Jl. Delima Raya Blok 8 No.5A, Duren Sawit, Jakarta Timur, 13450</p>
+                        <div class="text-dark small fw-medium m-0 text-start" style="line-height: 1.5; width: 100%;">Jl. Delima Raya Blok 8 No.5A, Duren Sawit, Jakarta Timur, 13450</div>
                     </div>
-                    <div class="d-flex align-items-center mb-3">
-                        <div class="icon-box me-3">
+                    <div class="d-flex align-items-center mb-1 w-100" style="justify-content: flex-start !important;">
+                        <div class="icon-box me-3 flex-shrink-0" style="margin-top: 4px;">
                             <i class="bi bi-envelope fs-5"></i>
                         </div>
-                        <a href="mailto:info@eresa.id" class="text-dark small text-decoration-none fw-medium">info@eresa.id</a>
+                        <a href="mailto:info@eresa.id" class="text-dark small text-decoration-none fw-medium m-0 d-block text-start" style="line-height: 1.2; width: 100%;">info@eresa.id</a>
                     </div>
-                    <div class="d-flex align-items-center">
-                        <div class="icon-box me-3">
+                    <div class="d-flex align-items-center w-100" style="justify-content: flex-start !important;">
+                        <div class="icon-box me-3 flex-shrink-0" style="margin-top: 4px;">
                             <i class="bi bi-telephone fs-5"></i>
                         </div>
-                        <a href="https://wa.me/6285117618858" class="text-dark small text-decoration-none fw-medium">+62 851-1761-8858</a>
+                        <a href="https://wa.me/6285117618858" class="text-dark small text-decoration-none fw-medium m-0 d-block text-start" style="line-height: 1.2; width: 100%;">+62 851-1761-8858</a>
                     </div>
                 </div>
             </div>

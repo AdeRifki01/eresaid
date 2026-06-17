@@ -7,7 +7,7 @@
 
     <title>@yield('title', 'ERESA.ID')</title>
 
-    {{-- Favicon --}}
+    {{-- Favicon Logo eresa.id --}}
     @if(request()->is('rebootcom*'))
         <link rel="icon" type="image/png" href="{{ asset('assets/images/rebootcom/logoRebootCom.png') }}">
     @else
@@ -68,7 +68,5 @@
             reveals.forEach(el => revealObserver.observe(el));
         });
     </script>
-
 </body>
-
 </html>

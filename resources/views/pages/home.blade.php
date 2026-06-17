@@ -11,5 +11,6 @@
 @include('sections.home.layanan')
 @include('sections.home.portofolio')
 @include('sections.home.customers')
+@include('sections.home.team')
 
 @endsection
