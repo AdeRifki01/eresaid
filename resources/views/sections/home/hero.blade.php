@@ -1,4 +1,4 @@
-<section class="hero-section" id="home-hero" style="--bg-desktop: url('{{ asset('assets/images/eresa/ID_landscape.png') }}'); --bg-mobile: url('{{ asset('assets/images/eresa/ID_potrait.png') }}');">
+<section class="hero-section home-hero" style="--bg-desktop: url('{{ asset('assets/images/eresa/ID_landscape.png') }}'); --bg-mobile: url('{{ asset('assets/images/eresa/ID_potrait.png') }}');">
     <div class="container hero-content">
         <h4 class="slogan anim-fade-up">We Make Your Company Take Off</h4>
         <p class="description mt-3 anim-fade-up delay-1">

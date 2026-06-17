@@ -11,11 +11,17 @@
     color: #fff;
 }
 
-#home-hero::before {
+.hero-section.home-hero::before {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: var(--bg-desktop);
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    max-width: none;
+    background:
+        linear-gradient(135deg, rgba(0, 0, 0, 0.45), rgba(26, 26, 46, 0.55)),
+        var(--bg-desktop);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,24 +31,13 @@
     z-index: 1;
 }
 
-#home-hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: linear-gradient(
-        135deg,
-        rgba(0, 0, 0, 0.45),
-        rgba(26, 26, 46, 0.55)
-    );
+.hero-content {
+    position: relative;
     z-index: 2;
 }
 
-.hero-content {
-    position: relative;
-    z-index: 3;
-}
-
 .slogan {
+    padding-top: 200px;
     font-size: 2.2rem;
     font-weight: 600;
     letter-spacing: 1px;
@@ -95,20 +90,14 @@
 
 /* Tablet */
 @media (max-width: 768px) {
-    #home-hero::before {
-        background-image: var(--bg-mobile);
+    .hero-section.home-hero::before {
+        background:
+            linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(26, 26, 46, 0.6)),
+            var(--bg-mobile);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         transform: none !important;
-    }
-
-    #home-hero::after {
-        background-image: linear-gradient(
-            135deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(26, 26, 46, 0.6)
-        );
     }
 
     .slogan {
@@ -126,6 +115,9 @@
     .slogan {
         font-size: 1.75rem;
         line-height: 1.3;
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .description {
