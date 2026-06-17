@@ -11,10 +11,14 @@
     padding-bottom: 60px; /* Memberi jarak dari bagian bawah layar */
 }
 
-.hero-section::before {
+.hero-section.about-hero::before {
     content: "";
     position: absolute;
     inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    max-width: none;
     background:
         linear-gradient(135deg, rgba(0, 0, 0, 0.45), rgba(26, 26, 46, 0.55)),
         var(--bg-desktop);
@@ -31,7 +35,7 @@
 }
 
 @media (max-width: 768px) {
-    .hero-section::before {
+    .hero-section.about-hero::before {
         background:
             linear-gradient(135deg, rgba(0, 0, 0, 0.5), rgba(26, 26, 46, 0.6)),
             var(--bg-mobile);

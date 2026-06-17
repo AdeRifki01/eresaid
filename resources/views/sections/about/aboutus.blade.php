@@ -7,13 +7,13 @@
             <div class="col-lg-5 reveal">
                 <div class="about-image-wrapper">
                     <!-- Carousel Image -->
-                    <div id="aboutImageCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
-                        <div class="carousel-inner" style="border-radius: 20px;">
+                    <div id="aboutImageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="false">
+                        <div class="carousel-inner" style="border-radius: 20px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);">
                             <div class="carousel-item active">
                                 <img src="{{ asset('assets/images/portofolio/mockup_1.png') }}" class="d-block w-100 about-main-img" alt="About Eresa 1">
                             </div>
                             <div class="carousel-item">
-                                <img src="{{ asset('assets/images/portofolio/mockup_2.png') }}" class="d-block w-100 about-main-img" alt="About Eresa 2">
+                                <img src="{{ asset('assets/images/portofolio/mockup_2.png') }}" class="d-block w-100 about-main-img about-img-2" alt="About Eresa 2">
                             </div>
                         </div>
                     </div>

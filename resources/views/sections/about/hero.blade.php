@@ -1,5 +1,5 @@
 <!-- HERO ABOUT -->
-<section class="hero-section d-flex align-items-end text-white text-center pb-5" id="about-hero" style="--bg-desktop: url('{{ asset('assets/images/eresa/ECS_landscape.png') }}'); --bg-mobile: url('{{ asset('assets/images/eresa/ECS_potrait.png') }}');">
+<section class="hero-section about-hero d-flex align-items-end text-white text-center pb-5" style="--bg-desktop: url('{{ asset('assets/images/eresa/ECS_landscape.png') }}'); --bg-mobile: url('{{ asset('assets/images/eresa/ECS_potrait.png') }}');">
     <div class="container hero-content mb-4 reveal">
         
         <!-- Tidak ada tag H1, karena Logo di gambar sudah berfungsi sebagai judul utama -->
