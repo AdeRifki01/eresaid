@@ -39,20 +39,33 @@
                             <div class="d-flex">
 
                                 <!-- SET ASLI -->
-                                <div class="item"><img src="{{ asset('assets/images/produk/almaz1.png') }}" alt="Produk Almaz"></div>
-                                <div class="item"><img src="{{ asset('assets/images/produk/jamuin1.png') }}" alt="Produk Jamuin"></div>
-                                <div class="item"><img src="{{ asset('assets/images/produk/reboot1.png') }}" alt="Produk Reboot"></div>
-                                <div class="item"><img src="{{ asset('assets/images/produk/almaz2.png') }}" alt="Produk Almaz 2"></div>
-                                <div class="item"><img src="{{ asset('assets/images/produk/jamuin2.png') }}" alt="Produk Jamuin 2"></div>
-                                <div class="item"><img src="{{ asset('assets/images/produk/reboot2.png') }}" alt="Produk Reboot 2"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/almaz.png') }}" alt="Produk Almaz"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/apd.png') }}" alt="Produk Jamuin"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/astro.png') }}" alt="Produk Rebootcom"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/bifa.png') }}" alt="Produk Almaz"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/gubuggurame.png') }}" alt="Produk Jamuin"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/jamuin.png') }}" alt="Produk Rebootcom"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/matuju.png') }}" alt="Produk Almaz"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/MestiMinum.png') }}" alt="Produk Jamuin"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/mul.png') }}" alt="Produk Reboot"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/rebootcom.png') }}" alt="Produk Almaz 2"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/rmj.png') }}" alt="Produk Jamuin 2"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/Totoro.png') }}" alt="Produk Reboot 2"></div>
+
 
                                 <!-- DUPLIKAT -->
-                                <div class="item"><img src="{{ asset('assets/images/produk/almaz1.png') }}" alt="Produk Almaz"></div>
-                                <div class="item"><img src="{{ asset('assets/images/produk/jamuin1.png') }}" alt="Produk Jamuin"></div>
-                                <div class="item"><img src="{{ asset('assets/images/produk/reboot1.png') }}" alt="Produk Reboot"></div>
-                                <div class="item"><img src="{{ asset('assets/images/produk/almaz2.png') }}" alt="Produk Almaz 2"></div>
-                                <div class="item"><img src="{{ asset('assets/images/produk/jamuin2.png') }}" alt="Produk Jamuin 2"></div>
-                                <div class="item"><img src="{{ asset('assets/images/produk/reboot2.png') }}" alt="Produk Reboot 2"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/almaz.png') }}" alt="Produk Almaz"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/apd.png') }}" alt="Produk Jamuin"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/astro.png') }}" alt="Produk Rebootcom"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/bifa.png') }}" alt="Produk Almaz"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/gubuggurame.png') }}" alt="Produk Jamuin"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/jamuin.png') }}" alt="Produk Rebootcom"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/matuju.png') }}" alt="Produk Almaz"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/MestiMinum.png') }}" alt="Produk Jamuin"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/mul.png') }}" alt="Produk Reboot"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/rebootcom.png') }}" alt="Produk Almaz 2"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/rmj.png') }}" alt="Produk Jamuin 2"></div>
+                                <div class="item"><img src="{{ asset('assets/images/produk/Totoro.png') }}" alt="Produk Reboot 2"></div>
 
                             </div>
                         </div>

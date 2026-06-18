@@ -11,7 +11,7 @@
     @if(request()->is('rebootcom*'))
         <link rel="icon" type="image/png" href="{{ asset('assets/images/rebootcom/logoRebootCom.png') }}">
     @else
-        <link rel="icon" type="image/png" href="{{ asset('assets/images/eresa/Logo_putih.png') }}">
+        <link rel="icon" type="image/png" href="{{ asset('assets/images/eresa/Logo_eresa.png') }}">
     @endif
 
     {{-- Bootstrap CSS --}}
