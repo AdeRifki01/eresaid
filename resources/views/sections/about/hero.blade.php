@@ -9,7 +9,7 @@
         </p>
         
         <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap reveal reveal-delay-2">
-            <a href="https://wa.me/6285117618858" target="_blank" class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold" style="letter-spacing: 0.5px;">
+            <a href="https://wa.me/6285117618858?text=Halo%20Admin%20Eresa%2C%20saya%20ingin%20konsultasi%20lebih%20lanjut." target="_blank" class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold" style="letter-spacing: 0.5px;">
                 <i class="bi bi-whatsapp me-2"></i> AYO KONSULTASI
             </a>
             <a href="https://drive.google.com/file/d/1qQovIwJ95k7x0M0FFja5NdJPa0yA5NM7/view?usp=sharing" target="_blank" class="btn btn-outline-light rounded-pill px-4 py-2 fw-bold" style="letter-spacing: 0.5px;">

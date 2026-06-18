@@ -25,8 +25,8 @@
                     <p class="rb-service-desc">
                         Software terintegrasi untuk diagnosis perangkat keras (Hardware) dan perangkat lunak (Software) komputer Anda secara mandiri dan real-time.
                     </p>
-                    <a href="#dinostick" class="rb-service-link">
-                        Pelajari Lebih Lanjut <i class="bi bi-arrow-right"></i>
+                    <a href="#hero" class="rb-service-link">
+                        Unduh Sekarang <i class="bi bi-download"></i>
                     </a>
                 </div>
             </div>

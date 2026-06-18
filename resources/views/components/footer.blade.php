@@ -88,7 +88,8 @@ $current_year = date("Y");
                         <ul class="list-unstyled">
                             @foreach($phones as $phone)
                             <li class="mb-2">
-                                <a href="https://wa.me/{{ $phone }}" target="_blank" class="d-flex align-items-center">
+                                <a href="https://wa.me/{{ $phone }}?text=Hai%20Admin%20Eresa%2C%20saya%20ingin%20berdiskusi%20langsung%2C%20apakah%20bisa%20meeting%20secara%20langsung%3F" 
+                                    target="_blank" class="d-flex align-items-center">
                                     <div style="width: 25px;"><i class="bi bi-whatsapp"></i></div>
                                     <div>{{ $phone }}</div>
                                 </a>

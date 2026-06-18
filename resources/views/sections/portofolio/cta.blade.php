@@ -8,7 +8,7 @@
             Percayakan kebutuhan visual brand Anda kepada kami dan rasakan transformasi branding yang profesional.
         </p>
         <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
-            <a href="https://wa.me/6285117618858" target="_blank" class="btn-gradient-cta">
+            <a href="https://wa.me/6285117618858?text=Halo%20Admin%20Eresa%2C%20saya%20sudah%20melihat%20portofolio%20Eresa%20dan%20tertarik%20untuk%20mempercayakan%20kebutuhan%20visual%20brand%20saya.%20Mari%20mulai%20proyek%20ini!" target="_blank" class="btn-gradient-cta">
                 <i class="bi bi-whatsapp me-2"></i> Mulai Proyek Anda
             </a>
             <a href="https://drive.google.com/file/d/1qQovIwJ95k7x0M0FFja5NdJPa0yA5NM7/view?usp=sharing" target="_blank" class="btn-outline-cta bg-white">

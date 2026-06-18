@@ -1,5 +1,5 @@
 <!-- HERO SECTION -->
-<section class="hero-section">
+<section id="hero" class="hero-section">
     <div class="container">
         <div class="row align-items-center gy-5">
             <!-- Left Content -->

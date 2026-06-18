@@ -56,23 +56,29 @@
 
                 <!-- Contact Details -->
                 <div class="contact-details mt-3 w-100 d-flex flex-column align-items-start" style="text-align: left;">
+                    <!-- Alamat -->
                     <div class="d-flex align-items-center mb-1 w-100" style="justify-content: flex-start !important;">
                         <div class="icon-box me-3 flex-shrink-0" style="margin-top: 4px;">
                             <i class="bi bi-geo-alt fs-5"></i>
                         </div>
-                        <div class="text-dark small fw-medium m-0 text-start" style="line-height: 1.5; width: 100%;">Jl. Delima Raya Blok 8 No.5A, Duren Sawit, Jakarta Timur, 13450</div>
+                        <a href="https://maps.app.goo.gl/hknFGGRKnirRHVop6" target="_blank" rel="noopener noreferrer" class="text-dark small text-decoration-none fw-medium m-0 d-block text-start" style="line-height: 1.5; width: 100%;">
+                            Jl. Delima Raya Blok 8 No.5A,
+                            Duren Sawit, Jakarta Timur, 13450
+                        </a>
                     </div>
+                    <!-- Email -->
                     <div class="d-flex align-items-center mb-1 w-100" style="justify-content: flex-start !important;">
                         <div class="icon-box me-3 flex-shrink-0" style="margin-top: 4px;">
                             <i class="bi bi-envelope fs-5"></i>
                         </div>
                         <a href="mailto:info@eresa.id" class="text-dark small text-decoration-none fw-medium m-0 d-block text-start" style="line-height: 1.2; width: 100%;">info@eresa.id</a>
                     </div>
+                    <!-- WhatsApp -->
                     <div class="d-flex align-items-center w-100" style="justify-content: flex-start !important;">
                         <div class="icon-box me-3 flex-shrink-0" style="margin-top: 4px;">
                             <i class="bi bi-telephone fs-5"></i>
                         </div>
-                        <a href="https://wa.me/6285117618858" class="text-dark small text-decoration-none fw-medium m-0 d-block text-start" style="line-height: 1.2; width: 100%;">+62 851-1761-8858</a>
+                        <a href="https://wa.me/6285117618858?text=Hai%20Admin%20Eresa%2C%20saya%20ingin%20berdiskusi%20langsung%2C%20apakah%20bisa%20meeting%20secara%20langsung%3F" target="_blank" rel="noopener noreferrer" class="text-dark small text-decoration-none fw-medium m-0 d-block text-start" style="line-height: 1.2; width: 100%;">+62 851-1761-8858</a>
                     </div>
                 </div>
             </div>

@@ -44,10 +44,10 @@
                     </div>
                 </div>
 
-<!-- FEED -->
-                <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-2">
+                <!-- FEED -->
+                <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-3">
                     <div class="gallery-card">
-                        <img src="assets/images/produk/jamuin1.png" class="gallery-img">
+                        <img src="assets/images/produk/mul.png" class="gallery-img">
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-3">
@@ -57,32 +57,52 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-4">
                     <div class="gallery-card">
-                        <img src="assets/images/produk/reboot1.png" class="gallery-img">
+                        <img src="assets/images/produk/rebootcom.png" class="gallery-img">
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-5">
                     <div class="gallery-card">
-                        <img src="assets/images/produk/reboot2.png" class="gallery-img">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-6">
-                    <div class="gallery-card">
-                        <img src="assets/images/produk/almaz1.png" class="gallery-img">
-                    </div>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-1">
-                    <div class="gallery-card">
-                        <img src="assets/images/produk/almaz2.png" class="gallery-img">
+                        <img src="assets/images/produk/almaz.png" class="gallery-img">
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-2">
                     <div class="gallery-card">
-                        <img src="assets/images/produk/Totoro1.png" class="gallery-img">
+                        <img src="assets/images/produk/jamuin.png" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-6">
+                    <div class="gallery-card">
+                        <img src="assets/images/produk/totoro.png" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-1">
+                    <div class="gallery-card">
+                        <img src="assets/images/produk/apd.png" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-2">
+                    <div class="gallery-card">
+                        <img src="assets/images/produk/gubuggurame.png" class="gallery-img">
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-3">
                     <div class="gallery-card">
-                        <img src="assets/images/produk/jamuin2.png" class="gallery-img">
+                        <img src="assets/images/produk/matuju.png" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-3">
+                    <div class="gallery-card">
+                        <img src="assets/images/produk/rmj.png" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-3">
+                    <div class="gallery-card">
+                        <img src="assets/images/produk/bifa.png" class="gallery-img">
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-3">
+                    <div class="gallery-card">
+                        <img src="assets/images/produk/astro.png" class="gallery-img">
                     </div>
                 </div>
             </div>

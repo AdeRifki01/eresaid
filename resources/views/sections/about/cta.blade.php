@@ -10,7 +10,7 @@
                 dan lihat bagaimana kami mengubahnya menjadi realitas digital yang berdampak luas.
             </p>
             
-            <a href="#" class="btn-gradient-cta mt-3 text-decoration-none anim-floating">
+            <a href="https://wa.me/6285117618858?text=Halo%20Admin%20Eresa%2C%20saya%20tertarik%20untuk%20mewujudkan%20ide%20bisnis%20saya%20dan%20ingin%20mengajukan%20penawaran%20terkait%20layanan%20digital%20dari%20Eresa." target="_blank" class="btn-gradient-cta mt-3 text-decoration-none anim-floating">
                 GET A QUOTE<i class="bi bi-arrow-right ms-2"></i>
             </a>
         </div>
