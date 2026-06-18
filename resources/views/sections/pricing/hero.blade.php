@@ -9,7 +9,7 @@
     <div class="floating-element fe-3"></div>
 
     <div class="container hero-content">
-        <h1 class="hero-title reveal">Wujudkan Ide Anda dengan<br><span class="hero-title-highlight">Paket yang Fleksibel</span></h1>
+        <h1 class="hero-title reveal">Wujudkan Ide Anda<br>dengan Paket <span class="hero-title-highlight">yang Fleksibel</span></h1>
         <p class="hero-subtitle mt-3 mx-auto reveal reveal-delay-1" style="max-width: 650px;">
             Mulai dari konten harian hingga strategi branding, kami menyediakan berbagai pilihan paket tanpa biaya tambahan. Investasi cerdas untuk pertumbuhan bisnis digital Anda.
         </p>

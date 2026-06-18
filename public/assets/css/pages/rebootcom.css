@@ -1,8 +1,9 @@
 /* Component Imports */
 @import url("../sections/rebootcom/hero.css");
 @import url("../sections/rebootcom/about.css");
-@import url("../sections/rebootcom/dinostik.css");
-@import url("../sections/rebootcom/services.css");
+@import url("../sections/rebootcom/dinostik.css?v=2");
+@import url("../sections/rebootcom/menu-dinostik.css?v=1");
+@import url("../sections/rebootcom/services.css?v=2");
 
 /* Rebootcom Design System & Tokens */
 :root {

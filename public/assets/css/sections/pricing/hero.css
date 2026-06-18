@@ -235,15 +235,19 @@
 
 @media (max-width: 768px) {
     .pricing-hero {
-        padding-top: 100px !important;
-        padding-bottom: 40px;
+        padding-top: 120px !important;
+        padding-bottom: 20px;
         min-height: 100vh;
     }
     .hero-title {
-        font-size: 2.4rem;
+        font-size: 2.3rem;
+        line-height: 1.4;
+        padding: 0 15px;
     }
     .hero-subtitle {
-        font-size: 1rem;
+        font-size: 0.99rem;
+        padding: 0 15px;
+        margin-top: 1.2rem !important;
     }
     .hero-pills {
         gap: 12px;

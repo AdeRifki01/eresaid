@@ -121,14 +121,6 @@ a:focus .gif-icon-wrap {
                                     <div>Pricing</div>
                                 </a>
                             </li>
-                            <li class="mb-2">
-                                <a href="/contact" class="d-flex align-items-center gap-2 gif-link">
-                                    <span class="gif-icon-wrap">
-                                        <img class="gif-img" data-src="{{ asset('assets/images/icon/footer/Contact.gif') }}" src="{{ asset('assets/images/icon/footer/Contact.gif') }}" alt="Contact">
-                                    </span>
-                                    <div>Contact</div>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                 </div>
