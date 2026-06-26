@@ -16,7 +16,7 @@
 
                 <img src="{{ asset('assets/images/brand/Almaz.png') }}" alt="Almaz">
                 <img src="{{ asset('assets/images/brand/Totoro.png') }}" alt="Totoro">
-                <img src="{{ asset('assets/images/brand/Jamuin.png') }}" alt="Jamuin">
+                <img src="{{ asset('assets/images/brand/jamuin.png') }}" alt="Jamuin">
                 <img src="{{ asset('assets/images/brand/apd.png') }}" alt="APD">
                 <img src="{{ asset('assets/images/brand/Sarae.png') }}" alt="Sarae">
                 <img src="{{ asset('assets/images/brand/astro.png') }}" alt="Astro">
@@ -36,7 +36,7 @@
                 <!-- DUPLIKAT (biar smooth looping) -->
                 <img src="{{ asset('assets/images/brand/Almaz.png') }}" alt="Almaz">
                 <img src="{{ asset('assets/images/brand/Totoro.png') }}" alt="Totoro">
-                <img src="{{ asset('assets/images/brand/Jamuin.png') }}" alt="Jamuin">
+                <img src="{{ asset('assets/images/brand/jamuin.png') }}" alt="Jamuin">
                 <img src="{{ asset('assets/images/brand/apd.png') }}" alt="APD">
                 <img src="{{ asset('assets/images/brand/Sarae.png') }}" alt="Sarae">
                 <img src="{{ asset('assets/images/brand/astro.png') }}" alt="Astro">

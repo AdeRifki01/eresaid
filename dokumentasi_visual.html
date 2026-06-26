@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart & ERD Eresa.id</title>
+    <script type="module">
+        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        mermaid.initialize({ startOnLoad: true, theme: 'default' });
+    </script>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            padding: 40px 20px; 
+            text-align: center; 
+            background: #f4f4f9; 
+            color: #333;
+        }
+        .diagram-container { 
+            background: white; 
+            padding: 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+            margin-bottom: 40px; 
+            display: inline-block; 
+            width: 100%; 
+            max-width: 900px; 
+        }
+        h2 { 
+            margin-top: 0;
+            margin-bottom: 30px;
+            color: #2c3e50; 
+            border-bottom: 2px solid #eee;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="diagram-container">
+        <h2>Flowchart Navigasi (Sitemap) Eresa.id</h2>
+        <div class="mermaid">
+            graph TD
+                %% Styling
+                classDef page fill:#f9f9f9,stroke:#333,stroke-width:2px;
+                classDef action fill:#d4edda,stroke:#28a745,stroke-width:2px;
+                classDef process fill:#cce5ff,stroke:#007bff,stroke-width:2px;
+
+                A([Pengunjung Web]) --> B[Halaman Utama / Home]
+                B:::page --> C[Tentang Kami / About]:::page
+                B --> D[Portofolio]:::page
+                B --> E[Harga & Layanan / Pricing]:::page
+                B --> F[Rebootcom]:::page
+                B --> G[Kontak / Contact]:::page
+            
+                G --> H{Kirim Pesan}:::action
+                H -->|Mengisi Form Kontak| I[ContactController@send]:::process
+                I --> J[Kirim Email ke info@eresa.id]:::process
+                I --> K[Tampilkan Notifikasi Berhasil/Gagal di Halaman]:::action
+        </div>
+    </div>
+
+    <div class="diagram-container">
+        <h2>Entity Relationship Diagram (ERD)</h2>
+        <p style="text-align: left; margin-bottom: 30px; color: #666; line-height: 1.6;">
+            <em>Catatan: Proyek ini menggunakan arsitektur statis untuk konten dan langsung mengirimkan pesan via Email. Tabel di bawah ini adalah tabel bawaan (default) dari Laravel untuk keperluan autentikasi dan sistem internal.</em>
+        </p>
+        <div class="mermaid">
+            erDiagram
+                USERS {
+                    bigint id PK
+                    string name
+                    string email UK
+                    timestamp email_verified_at
+                    string password
+                    string remember_token
+                    timestamp created_at
+                    timestamp updated_at
+                }
+            
+                PASSWORD_RESET_TOKENS {
+                    string email PK
+                    string token
+                    timestamp created_at
+                }
+
+                SESSIONS {
+                    string id PK
+                    bigint user_id FK
+                    string ip_address
+                    text user_agent
+                    longText payload
+                    integer last_activity
+                }
+                
+                USERS ||--o{ SESSIONS : "memiliki"
+            
+                CACHE {
+                    string key PK
+                    mediumText value
+                    integer expiration
+                }
+            
+                JOBS {
+                    bigint id PK
+                    string queue
+                    longText payload
+                    tinyInteger attempts
+                    integer reserved_at
+                    integer available_at
+                    integer created_at
+                }
+        </div>
+    </div>
+
+</body>
+</html>

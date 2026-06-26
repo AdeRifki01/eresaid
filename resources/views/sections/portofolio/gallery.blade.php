@@ -72,7 +72,7 @@
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-6">
                     <div class="gallery-card">
-                        <img src="assets/images/produk/totoro.png" class="gallery-img">
+                        <img src="assets/images/produk/Totoro.png" class="gallery-img">
                     </div>
                 </div>
                 <div class="col-6 col-md-4 col-lg-3 gallery-item feed reveal reveal-delay-1">

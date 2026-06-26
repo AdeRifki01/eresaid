@@ -1,0 +1,111 @@
+# Dokumentasi Proyek Website Eresa.id
+
+## 1. Ikhtisar Proyek (Project Overview)
+**Eresa.id** adalah sebuah website *company profile* dan *landing page* interaktif yang dibangun untuk menampilkan layanan, portofolio, dan informasi perusahaan kepada klien potensial. Website ini difokuskan pada presentasi visual yang premium, estetika modern, dan interaksi yang responsif untuk berbagai perangkat (*desktop* maupun *mobile*).
+
+## 2. Teknologi yang Digunakan (Tech Stack)
+*   **Framework Backend:** Laravel (PHP)
+*   **Templating Engine:** Blade (Sistem *templating* bawaan Laravel)
+*   **Frontend:** HTML5, CSS3 (Vanilla/Custom CSS menggunakan arsitektur Flexbox & Grid), JavaScript
+*   **Styling Khusus:** Animasi transisi (*micro-animations*), *glassmorphism*, dan desain antar muka (UI) kustom tanpa mengandalkan *framework* CSS seperti Bootstrap/Tailwind (untuk eksklusivitas desain).
+*   **Database:** SQLite / MySQL. Digunakan sebatas untuk tabel-tabel bawaan (internal) Laravel seperti autentikasi (jika sewaktu-waktu diaktifkan), manajemen *session*, *cache*, dan antrean sistem (*queue jobs*). Data konten website tidak disimpan di tabel database.
+
+## 3. Struktur Navigasi & Routing (Sitemap)
+Seluruh rute (*routing*) dikonfigurasi melalui file sentral `routes/web.php`. Berikut adalah daftar halaman yang tersedia:
+1.  **`/` (Home)** - Halaman utama (*Hero section*, ringkasan layanan, dan nilai jual utama). Menggunakan *view*: `pages.home`.
+2.  **`/about` (Tentang Kami)** - Penjabaran tentang perusahaan, visi, dan misi. Menggunakan *view*: `pages.about`.
+3.  **`/portofolio`** - Galeri dan *showcase* karya, proyek, atau studi kasus klien. Menggunakan *view*: `pages.portofolio`.
+4.  **`/pricing` (Harga & Layanan)** - Rincian tabel paket harga (Dinostik, dll) dan spesifikasi layanan. Menggunakan *view*: `pages.pricing`.
+5.  **`/rebootcom`** - *Landing page* khusus untuk produk/layanan Rebootcom. Menggunakan *view*: `pages.rebootcom`.
+6.  **`/contact` (Kontak)** - Halaman penghubung yang berisi form isian pengiriman pesan, beserta info alamat dan nomor telepon. Menggunakan *view*: `pages.contact`.
+
+## 4. Alur Kerja Formulir Kontak & Konfigurasi Email
+Sistem kontak pada website ini bersifat *pass-through*, yang artinya **pesan tidak disimpan ke dalam database server**, melainkan langsung diantarkan (diteruskan) ke email utama admin (`info@eresa.id`).
+
+### Alur Kerja Sistem:
+1.  Pengunjung mengisi form kontak (Nama, Email, No. Telepon, Nama Perusahaan, Pesan) dan menekan "Send".
+2.  Data ditangkap dan diproses oleh backend pada file `App\Http\Controllers\ContactController@send`.
+3.  Data tersebut divalidasi keamanannya, lalu dibungkus menggunakan cetakan/template email pada `App\Mail\ContactFormMail`.
+4.  Laravel mengirim email *ke* `info@eresa.id` dengan menyematkan instruksi khusus bernama *Header Reply-To*. Berkat instruksi ini, ketika Admin membalas (*reply*) email tersebut di Outlook, balasan akan otomatis tertuju pada alamat email si pengunjung.
+
+### Penting: Konfigurasi File `.env` (SMTP)
+Agar website memiliki "izin" dan "kendaraan" untuk mengirim pesan tersebut secara nyata di internet, kredensial SMTP wajib diisi pada file `.env`. 
+
+```env
+# Contoh Pengaturan SMTP Asli:
+MAIL_MAILER=smtp
+MAIL_HOST=mail.eresa.id           # Sesuaikan dengan host SMTP dari provider hosting Anda
+MAIL_PORT=465                     # Biasanya 465 (SSL) atau 587 (TLS)
+MAIL_USERNAME=info@eresa.id       # Akun email yang digunakan website sebagai "Kurir Pengirim"
+MAIL_PASSWORD=password_rahasia    # Password asli dari akun email di atas
+MAIL_ENCRYPTION=tls               # tls / ssl
+MAIL_FROM_ADDRESS="info@eresa.id" # Email yang muncul sebagai pengirim
+MAIL_FROM_NAME="Website Eresa.id" # Nama yang muncul sebagai pengirim
+```
+*(Perhatian: Jika `MAIL_MAILER` dibiarkan tersetting menjadi `log`, maka website hanya akan menyimpan catatan pengiriman di `storage/logs/laravel.log` secara diam-diam dan email tidak akan pernah sampai ke aplikasi Outlook).*
+
+## 5. Flowchart Navigasi Keseluruhan
+
+```mermaid
+graph TD
+    A([Pengunjung Website]) --> B[Halaman Utama / Home]
+    B --> C[Tentang Kami / About]
+    B --> D[Portofolio]
+    B --> E[Harga & Layanan / Pricing]
+    B --> F[Rebootcom]
+    B --> G[Kontak / Contact]
+
+    G --> H{Mengisi Form Kontak}
+    H -->|Validasi Backend| I[ContactController@send]
+    I --> J[Website Login ke SMTP Server]
+    J --> K[Website Mengirim Email ke info@eresa.id]
+    K --> L[Tampilkan Notifikasi Sukses/Gagal di Web]
+```
+
+## 6. Entity Relationship Diagram (ERD) Bawaan
+Karena website saat ini masih dikategorikan sebagai "Web Statis" dari sisi *Content Management* dan "Pass-Through" dari sisi interaksi pesan, tidak diperlukan tabel konten (seperti tabel artikel, tabel klien, atau tabel pesan masuk). 
+
+Tabel yang ada di dalam database saat ini adalah murni infrastruktur bawaan Laravel untuk keperluan *backend* secara umum.
+
+```mermaid
+erDiagram
+    USERS {
+        bigint id PK
+        string name
+        string email UK
+        string password
+        timestamp created_at
+    }
+    SESSIONS {
+        string id PK
+        bigint user_id FK
+        string ip_address
+        text user_agent
+        longText payload
+        integer last_activity
+    }
+    USERS ||--o{ SESSIONS : "menyimpan sesi login"
+    CACHE {
+        string key PK
+        mediumText value
+        integer expiration
+    }
+    JOBS {
+        bigint id PK
+        string queue
+        longText payload
+        tinyInteger attempts
+    }
+```
+
+## 7. Panduan Singkat Pengembangan & Pemeliharaan (Local / Dev)
+Jika kelak diperlukan penyesuaian kode atau pembaruan di PC lokal (seperti di Laragon):
+1. Buka terminal (Command Prompt/PowerShell) di folder proyek.
+2. Jalankan `composer install` untuk memastikan pustaka backend (PHP) terpasang.
+3. Jalankan `npm install` untuk mengunduh modul-modul frontend (Node.js).
+4. Pastikan file `.env` sudah ada dan sesuai konfigurasinya.
+5. (Opsional) Jalankan `php artisan serve` jika tidak menggunakan Laragon *auto-host*.
+6. Jika Anda melakukan perubahan pada *assets* (seperti Vanilla CSS atau JavaScript jika nantinya dibungkus dengan Vite), jangan lupa jalankan `npm run dev` untuk merefleksikan perubahannya di browser.
+
+---
+*Dokumentasi ini merangkum seluruh arsitektur, aset, file utama, dan alur data dari proyek Eresa.id. Disusun pada tahap penyelesaian (deployment) sebagai panduan bagi Admin atau Developer selanjutnya.*
